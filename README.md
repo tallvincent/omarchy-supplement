@@ -17,3 +17,4 @@ Run the install script.
 ## TODO
 
 - [ ] Optional reinstall all dotfiles so the entire config isn't deleted (mainly for Neovim)
+- [ ] Restart walker without it listening to the next time it opens
