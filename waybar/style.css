@@ -1,0 +1,184 @@
+@import "../omarchy/current/theme/waybar.css";
+
+/* NOTE: depends on dark background around status bar */
+
+* {
+  /* background-color: @background; */
+  /* color: @foreground; */
+
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: 'JetBrains Mono';
+  font-size: 12px;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+.modules-left {
+  margin-left: 1px;
+  /* background-color: rgba(124, 127, 147, 0.4); */
+  border-radius: 2px;
+  padding-right: 10px;
+  padding-left: 2px;
+}
+
+.modules-center {
+  /* background-color: rgba(124, 127, 147, 0.4); */
+  border-radius: 2px;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+.modules-right {
+  margin-right: 1px;
+}
+
+#workspaces button {
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
+}
+
+#workspaces button.empty {
+  opacity: 0.5;
+}
+
+#battery {
+  margin-left: 3px;
+  /* background-color: rgba(124, 127, 147, 0.4); */
+  border-radius: 2px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+#memory {
+  /* background-color: rgba(124, 127, 147, 0.4); */
+  border-radius: 2px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+#temperature {
+  /* background-color: rgba(124, 127, 147, 0.4); */
+  border-radius: 2px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+#cpu {
+  /* background-color: rgba(124, 127, 147, 0.4); */
+  border-radius: 2px;
+  padding-right: 8px;
+  padding-left: 6px;
+}
+
+#pulseaudio {
+  /* background-color: rgba(124, 127, 147, 0.4); */
+  border-radius: 2px;
+  padding-right: 12px;
+  padding-left: 8px;
+}
+
+#connectivity {
+  /* background-color: rgba(124, 127, 147, 0.4); */
+  border-radius: 2px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+#cpu,
+#memory,
+#pulseaudio,
+#temperature,
+#connectivity,
+#custom-omarchy,
+#custom-screenrecording-indicator,
+#custom-update {
+  min-width: 12px;
+  margin: 0 3px;
+}
+
+#tray {
+  margin-left: 3px;
+  margin-right: 3px;
+  /* background-color: rgba(124, 127, 147, 0.4); */
+  border-radius: 2px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+#bluetooth {
+  margin-right: 12px;
+  margin-left: 4px;
+}
+
+#network {
+  margin-right: 8px;
+}
+
+#custom-expand-icon {
+  /* background-color: rgba(124, 127, 147, 0.4); */
+  border-radius: 2px;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-right: 3px;
+}
+
+tooltip {
+  padding: 2px;
+}
+
+#custom-update {
+  font-size: 10px;
+}
+
+#clock {
+  margin-left: 8.75px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#custom-screenrecording-indicator {
+  min-width: 12px;
+  margin-left: 8.75px;
+  font-size: 10px;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #a55555;
+}
+
+#battery.charging {
+  color: #ffffff;
+  background-color: #26A65B;
+  padding-right: 8px;
+}
+
+#battery.warning:not(.charging) {
+  background-color: #ffbe61;
+  color: black;
+}
+
+#battery.critical:not(.charging) {
+  background-color: #f53c3c;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
