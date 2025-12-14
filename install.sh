@@ -8,7 +8,7 @@
 . ./install-freetube.sh
 . ./install-proton-mail.sh
 . ./install-freac.sh
-. ./install-flatpak.sh
+. ./install-orca-slicer.sh
 . ./install-localsend.sh
 . ./install-proton-vpn.sh
 . ./install-dev-tools.sh
