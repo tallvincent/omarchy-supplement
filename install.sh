@@ -10,6 +10,7 @@
 . ./install-freac.sh
 . ./install-orca-slicer.sh
 . ./install-localsend.sh
+. ./install-gimp.sh
 . ./install-proton-vpn.sh
 . ./install-dev-tools.sh
 . ./install-cli-tools.sh
