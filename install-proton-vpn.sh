@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "Installing protonvpn-cli"
+echo "Installing proton-vpn-cli"
 
-yay -S --noconfirm --needed protonvpn-cli
+yay -S --noconfirm --needed proton-vpn-cli

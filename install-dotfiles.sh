@@ -31,6 +31,7 @@ if [ $? -eq 0 ]; then
   # rm -rf ~/.config/wezterm
   # rm -rf ~/.config/nushell
   # rm -rf ~/.config/yazi
+  rm -rf ~/.config/ghostty
 
   cd "$REPO_NAME"
   stow zshrc
@@ -39,6 +40,7 @@ if [ $? -eq 0 ]; then
   stow starship
   stow nvim
   stow yazi
+  stow ghostty
   cd ~/supplement
 else
   echo "Failed to clone the repository."
